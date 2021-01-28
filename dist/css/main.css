@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 0. Breakpoints ==================================== */
 /* 1. Colors ========================================= */
 /* 2. Fonts  ========================================= */
@@ -301,9 +302,28 @@ footer nav .social {
 footer nav a {
   text-decoration: none;
 }
-footer nav a img {
-  width: 25px;
-  height: auto;
+footer nav a .icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+footer nav a .facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  content: "";
+  color: #3c5a99;
+  font-size: 25px;
+}
+footer nav a .twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  content: "";
+  font-size: 25px;
+  color: #55adee;
+}
+footer nav a span {
   margin-right: 0.3rem;
 }
 
